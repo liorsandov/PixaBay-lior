@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Server side rendering boilerplate with Next.js and Material-ui
 
-## Getting Started
+This project is a simple boilerplate for server side rendering approach. It comes with `Next.js` to handle routes and server side rendering, `Material-ui` for a components framework, `Styled-components` to style lib, `Jest and Enzyme` for test suite, `Eslint and Prettier` for a code style/quality, and `Husky` to prevent bad commits/pushs.
 
-First, run the development server:
+## Installing / Getting started
 
-```bash
-npm run dev
-# or
-yarn dev
+Download the example [or clone the repo](https://github.com/filipemarins/nextjs-material-ui-boilerplate):
+
+
+```shell
+git clone https://github.com/filipemarins/nextjs-material-ui-boilerplate
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Development
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The eslint and prettier is configured with husky to run and fix problems on pre commit. And tests before push.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+To build the project and run the server in developer mode:
+```
+npm run dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To run the tests:
+```
+npm test
+````
 
-## Learn More
+## Production
 
-To learn more about Next.js, take a look at the following resources:
+To build the project and start the server to production:
+```
+npm run build && npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licensing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
